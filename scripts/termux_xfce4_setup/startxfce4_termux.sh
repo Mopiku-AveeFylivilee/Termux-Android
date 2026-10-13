@@ -1,5 +1,5 @@
 #!/data/data/com.termux/files/usr/bin/bash
-# Script by: DroidMaster. Modified by: Mopiku.
+# Script by: DroidMaster. Modified by: AveeFylivilee.
 
 # Kill open X11 processes
 kill -9 $(pgrep -f "termux.x11") 2>/dev/null
