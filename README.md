@@ -18,12 +18,11 @@ Guided to install Termux, setup Termux with script, and running native Termux XF
 # 🏁 First <a name=first-steps></a>
 you need to install:
 <br>
-<br>
 [Termux F-Droid](https://f-droid.org/packages/com.termux)
 <br> [Termux:X11](https://github.com/termux/termux-x11/releases/tag/nightly)
 <br>
-<br>
 for a full setup Linux desktop.
+<br>
 <br>
 ⚠️ Do not install Termux from Play Store!
 
