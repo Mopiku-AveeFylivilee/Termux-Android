@@ -22,7 +22,7 @@ Guide to install Termux, setup Termux with script, and running native Termux XFC
 you need to install:
 
 * [Termux F-Droid](https://f-droid.org/packages/com.termux)
-* [Termux:X11](https://github.com/termux/termux-x11/releases/tag/nightly)
+* Download the [Termux:X11](https://github.com/termux/termux-x11/releases/tag/nightly) universal apk.
 
 in order for a full Linux desktop.
 
