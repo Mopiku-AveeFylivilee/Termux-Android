@@ -15,5 +15,6 @@ Guided to install Termux F-Droid, setup Termux with script, and running native T
 <br>
 
 # 🏁 First <a name=first-steps></a>
-you need to install [Termux F-Droid](https://f-droid.org/packages/com.termux), and [Termux:X11](https://github.com/termux/termux-x11/releases/tag/nightly).\n
+you need to install [Termux F-Droid](https://f-droid.org/packages/com.termux), and [Termux:X11](https://github.com/termux/termux-x11/releases/tag/nightly).
+<br>
 ⚠️ Do not install Termux from Play Store!
