@@ -18,6 +18,19 @@ Guide to install Termux, setup Termux with script, and running native Termux XFC
 ---
 <br>
 
+
+# Termux Environment Preview
+
+| Native |
+|---------------------------------------------|
+| <img src="/Documentation/images/preview_native.jpg"/> |
+
+
+---
+<br>
+<br>
+
+
 # 🏁 First <a name=first-steps></a>
 you need to install:
 
@@ -31,6 +44,7 @@ in order for a full Linux desktop.
 Basic packages you need to install on Termux:
 
 ```
+# Copy paste this to Termux
 pkg update
 pkg upgrade -y
 pkg install x11-repo -y
