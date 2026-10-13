@@ -6,8 +6,13 @@ Guided to install Termux F-Droid, setup Termux with script, and running native T
 
 ### You can visit the official [DroidMaster](https://github.com/LinuxDroidMaster/Termux-Desktops?tab=readme-ov-file) repository for more information.
 
+
+
 # 📚 Index
 * 🏁 [First steps](#first-steps)
 
+
+
+
 # 🏁 First <a name=first-steps></a>
-you need to install the newest [Termux F-Droid](https://f-droid.org/packages/com.termux). (do not install Termux from Play Store!)
+you need to install [Termux F-Droid],(https://f-droid.org/packages/com.termux) and (do not install Termux from Play Store!)
