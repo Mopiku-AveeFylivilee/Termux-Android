@@ -10,8 +10,6 @@ pkg i termux-x11-nightly -y
 pkg i pulseaudio -y
 pkg i wget -y
 pkg i git -y
-pkg i mpv -y
-pkg i vlc -y
 pkg i gwenview -y
 pkg i starship -y
 pkg i dialog -y
