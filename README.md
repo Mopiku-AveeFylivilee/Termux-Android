@@ -2,7 +2,7 @@
 
 # Termux-Android
 
-Guide to install Termux, setup Termux with script, and running native Termux XFCE4 desktop on Termux:X11, and even running Arch Linux ARM64 PRoot with KDE Plasma desktop, (I only knew that DE installation for Arch Linux.) or other Linux Distros on proot-distro.
+Guide to install Termux, setup Termux using script, and running native Termux XFCE4 desktop on Termux:X11, and even running Arch Linux ARM64 PRoot with KDE Plasma desktop, (I only knew that DE installation for Arch Linux.) or other Linux Distros on proot-distro.
 
 ### You can visit the official [DroidMaster](https://github.com/LinuxDroidMaster/Termux-Desktops?tab=readme-ov-file) repository for more information.
 
@@ -61,4 +61,28 @@ pkg install git
 ---
 <br>
 
-# 2
+# Setup Termux XFCE4 desktop using script
+Download the script setup:
+```
+cd ~
+wget https://raw.githubusercontent.com/Mopiku-AveeFylivilee/Termux-Android/refs/heads/main/scripts/Termux_setup/termux_setup.sh
+```
+
+Give the script permission and execute the script:
+```
+chmod +x termux_setup.sh && ./termux_setup.sh
+```
+
+After finishing it, loging-out and loging-in to apply the change.
+
+<br>
+<br>
+
+---
+<br>
+
+# Shortcut instructions:
+* Starting XFCE4 desktop, type: "desktop"
+* Start X11 without XFCE4, type: "xorg11"
+* Kill all opened X11, type: "killx11"
+* Check the directory storage, type "stolist"
