@@ -25,10 +25,7 @@ export 'PULSE_SERVER=127.0.0.1'
 virgl_test_server_android &
 
 # Export display with GPU acceleration on port: 0
-export GALLIUM_DRIVER=virpipe MESA_GL_VERSION_OVERRIDE=4.0 DISPLAY=:0
-
-# Launch DBus session
-dbus-launch &
+export GALLIUM_DRIVER=virpipe MESA_GL_VERSION_OVERRIDE=4.0 DISPLAY=:0 && dbus-launch &
 
 # Run window manager
 xfwm4 &
