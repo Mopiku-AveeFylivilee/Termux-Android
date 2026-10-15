@@ -149,6 +149,7 @@ xfwm4 &
 
 # Auto start app
 thunar &
+xfce4-terminal &
 
 exit 0
 EOF
