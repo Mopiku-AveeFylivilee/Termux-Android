@@ -73,7 +73,8 @@ Give the script permission and execute the script:
 chmod +x termux_setup.sh && ./termux_setup.sh
 ```
 
-After finishing it, loging-out and loging-in to apply the change.
+After finished, to apply the change, please loging-out and loging-in.
+* press (CTRL + D) to logout.
 
 <br>
 <br>
