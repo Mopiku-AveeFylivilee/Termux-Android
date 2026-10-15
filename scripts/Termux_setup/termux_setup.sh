@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 clear
 
-# Update and installing needed packages
+# Update and install needed packages
 echo -e "\e[0;32mInstalling some pakages...\e[0m"
 pkg update && pkg upgrade -y
 pkg i tur-repo -y
