@@ -34,7 +34,7 @@ Guide to install Termux, setup Termux with script, and running native Termux XFC
 # 🏁 First <a name=first-steps></a>
 you need to install:
 
-* [Termux F-Droid](https://f-droid.org/packages/com.termux)
+* The newest [Termux F-Droid](https://f-droid.org/packages/com.termux) (not the beta version.)
 * Download the [Termux:X11](https://github.com/termux/termux-x11/releases/tag/nightly) universal debug apk.
 
 in order for a full Linux desktop.
@@ -44,16 +44,15 @@ in order for a full Linux desktop.
 Basic packages you need to install on Termux:
 
 ```
-# Copy paste this to Termux
 pkg update
-pkg upgrade -y
-pkg install x11-repo -y
-pkg install termux-x11-nightly -y
-pkg install tur-repo -y
-pkg install pulseaudio -y
-pkg install proot-distro -y
-pkg install wget -y
-pkg install git -y
+pkg upgrade
+pkg install x11-repo
+pkg install termux-x11-nightly
+pkg install tur-repo
+pkg install pulseaudio
+pkg install proot-distro
+pkg install wget
+pkg install git
 ```
 
 <br>
