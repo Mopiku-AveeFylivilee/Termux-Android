@@ -86,4 +86,4 @@ After finished, to apply the change, please loging-out and loging-in.
 * Start XFCE4 desktop, type:  desktop
 * Start X11 without XFCE4, type:  xorg11
 * Kill all opened X11, type:  killx11
-* Check the directory storage, type:  stolist
+* Check directory storage, type:  stolist
