@@ -68,7 +68,7 @@ cd ~
 wget https://raw.githubusercontent.com/Mopiku-AveeFylivilee/Termux-Android/refs/heads/main/scripts/Termux_setup/termux_setup.sh
 ```
 
-Give the script permission and execute the script:
+Give the script permission, and execute it:
 ```
 chmod +x termux_setup.sh && ./termux_setup.sh
 ```
@@ -82,8 +82,35 @@ After finished, to apply the change, please loging-out and loging-in.
 ---
 <br>
 
-# Shortcut instructions:
-* Start XFCE4 desktop, type:  desktop
-* Start X11 without XFCE4, type:  xorg11
-* Kill opened X11, type:  killx11
-* Check directory storage, type:  stolist
+# Type the shortcut:
+<table>
+  <thead>
+    <tr>
+        <th scope="col">Shortcuts</th>
+        <th scope="col">Information</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td>desktop</td>
+      <td>To start XFCE4 desktop.</td>
+    </tr>
+    <tr>
+      <td>xorg11</td>
+      <td>To start X11 without XFCE4.</td>
+    </tr>
+    <tr>
+      <td>killx11</td>
+      <td>To force-close X11 server. ⚠️ It can cause damages to your data! only use if you have problem with X11.</td>
+    </tr>
+  </tbody>
+<table>
+
+<br>
+<br>
+
+---
+<br>
+
+# 4🛠
