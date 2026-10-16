@@ -72,7 +72,8 @@ wget https://raw.githubusercontent.com/Mopiku-AveeFylivilee/Termux-Android/refs/
 
 Give the script permission, and execute it:
 ```
-chmod +x termux_setup.sh && ./termux_setup.sh
+chmod +x termux_setup.sh
+./termux_setup.sh
 ```
 
 After finished, to apply the change, please loging-out and loging-in.
@@ -84,11 +85,11 @@ After finished, to apply the change, please loging-out and loging-in.
 ---
 <br>
 
-# 📋 Shortcuts list:<a name=shortcuts-list></a>
+# 📋 Shortcuts list:<a name=shortcuts-list>
 <table>
   <thead>
     <tr>
-      <th scope="col" colspan="6">Type this to your Termux:</th>
+      <th scope="col" colspan="6">Instructions:</th>
     </tr>
     <tr>
         <th scope="col">Shortcuts:</th>
