@@ -103,7 +103,7 @@ After finished, to apply the change, please loging-out and loging-in.
     </tr>
     <tr>
       <td>xorg11</td>
-      <td>To start X11 without XFCE4.</td>
+      <td>To start X11 without desktop environment.</td>
     </tr>
     <tr>
       <td>killx11</td>
