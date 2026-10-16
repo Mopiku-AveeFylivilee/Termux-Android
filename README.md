@@ -11,6 +11,8 @@ Guide to install Termux, setup Termux using script, and running native Termux XF
 
 # 📚 Index
 * 🏁 [First steps](#first-steps)
+* 📄 [Setup XFCE4 with scirpt](#setup-xfce4)
+* 📋 [Shortcuts list](shortcuts-list)
 
 <br>
 <br>
@@ -61,7 +63,7 @@ pkg install git
 ---
 <br>
 
-# Setup Termux XFCE4 desktop using script
+# 📄 Setup Termux XFCE4 desktop using script<a name=setup-xfce4></a>
 Download the setup script:
 ```
 cd ~
@@ -82,12 +84,15 @@ After finished, to apply the change, please loging-out and loging-in.
 ---
 <br>
 
-# Type the shortcut:
+# 📋 Shortcuts list:<a name=shortcuts-list></a>
 <table>
   <thead>
     <tr>
-        <th scope="col">Shortcuts</th>
-        <th scope="col">Information</th>
+      <th scope="col" colspan="6">Type this to your Termux:</th>
+    </tr>
+    <tr>
+        <th scope="col">Shortcuts:</th>
+        <th scope="col">Information:</th>
     </tr>
   </thead>
 
