@@ -64,7 +64,7 @@ pkg install git
 <br>
 
 # 📄 Setup Termux XFCE4 desktop using script<a name=setup-xfce4></a>
-Download the setup script:
+Download the script:
 ```
 cd ~
 wget https://raw.githubusercontent.com/Mopiku-AveeFylivilee/Termux-Android/refs/heads/main/scripts/Termux_setup/termux_setup.sh
