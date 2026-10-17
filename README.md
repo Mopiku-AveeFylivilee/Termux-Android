@@ -11,7 +11,7 @@ Guide to install Termux, setup Termux using script, and running native Termux XF
 
 # 📚 Index
 * 🏁 [First steps](#first-steps)
-* 📄 [Setup XFCE4 with script](#setup-xfce4)
+* 🐀 [Setup XFCE4 with script](#setup-xfce4)
 * 📋 [Shortcuts list](#shortcuts-list)
 
 <br>
@@ -63,7 +63,7 @@ pkg install git
 ---
 <br>
 
-# 📄 Setup Termux XFCE4 desktop using script<a name=setup-xfce4></a>
+# 🐀 Setup Termux XFCE4 desktop using script<a name=setup-xfce4></a>
 Download the script:
 ```
 cd ~
