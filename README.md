@@ -2,7 +2,7 @@
 
 # Termux-Android
 
-Guide to install Termux, setup Termux using script, and running native Termux XFCE4 desktop on Termux:X11, and even running Arch Linux ARM64 PRoot with KDE Plasma desktop, (I only knew that DE installation for Arch Linux.) or other Linux Distros on proot-distro.
+Guide to install Termux, setup Termux using script, and running native Termux XFCE4 desktop on Termux:X11, and even running Arch Linux ARM64 PRoot with KDE Plasma desktop, (I only know that DE installation for Arch Linux.) or other Linux Distros on proot-distro.
 
 ### You can visit the official [DroidMaster](https://github.com/LinuxDroidMaster/Termux-Desktops?tab=readme-ov-file) repository for more details and information.
 
