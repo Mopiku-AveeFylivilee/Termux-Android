@@ -89,7 +89,7 @@ After finished, to apply the change, please loging-out and loging-in.
 <table>
   <thead>
     <tr>
-      <th scope="col" colspan="6">Instructions:</th>
+      <th scope="col" colspan="6">Instructions</th>
     </tr>
     <tr>
         <th scope="col">Shortcuts:</th>
@@ -112,7 +112,8 @@ After finished, to apply the change, please loging-out and loging-in.
     </tr>
   </tbody>
 <table>
-
+Don't run multiple desktop launchers at the same time, it's just like 'killx11' that force-close X11 server.
+  
 <br>
 <br>
 
