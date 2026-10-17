@@ -216,7 +216,7 @@ EOF
 # Give the launcher scripts permission to execute.
 echo #
 echo "Giving two launcher scripts permission to execute..."
-cd ~ && chmod +x startxfce4_termux.sh startx11.sh
+chmod +x startxfce4_termux.sh startx11.sh
 
 echo #
 echo -e "\e[0;32mTermux setup was complited!\e[0m"
