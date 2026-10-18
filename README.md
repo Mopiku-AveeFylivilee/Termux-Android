@@ -43,7 +43,7 @@ in order for a full Linux desktop.
 
 ⚠️ Do not install Termux from Play Store!
 
-Basic packages you need to install on Termux:
+Update Termux and install wget:
 
 ```
 pkg update
