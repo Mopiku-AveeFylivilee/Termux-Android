@@ -18,7 +18,7 @@ Termux is a Linux terminal environtment, you can connect a server via SSH, codin
 <br>
 
 ## Instalation:
-Install Termux, setup Termux and XFCE4 using script, and running XFCE4 desktop on Termux:X11. Instruction below⬇️
+Install Termux, setup Termux and XFCE4 using script, running XFCE4 desktop on Termux:X11. Instruction below⬇️
 
 ### You can visit the official [DroidMaster](https://github.com/LinuxDroidMaster/Termux-Desktops?tab=readme-ov-file) repository for more details and information.
 
