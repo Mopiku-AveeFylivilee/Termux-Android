@@ -2,7 +2,21 @@
 
 # Termux-Android
 
-Guide to install Termux, setup Termux using script, and running native Termux XFCE4 desktop on Termux:X11, and even running Arch Linux ARM64 PRoot with KDE Plasma desktop, (I only know that DE installation for Arch Linux.) or other Linux Distros on proot-distro.
+Termux is a Linux terminal environtment, you can connect a server via SSH, coding/programming with VS Code, Vim, Nano, LibreOffice for office work, Kdenlive for video editing 'if your phone strong enough', and other applications. (Note that not all Applications suport Termux.) (OPTIONAL) running Arch Linux ARM64 PRoot with KDE Plasma desktop, (I only know that DE installation for Arch Linux.) or other Linux Distros on proot-distro for many apps support compare to Termux native.
+
+<br>
+<br>
+
+## Requirement:
+* 4 GiB of free storage.
+* Termux F-Droid or GitHub version. (not from Play Store.)
+* Termux:X11 for graphical user interface.
+
+<br>
+<br>
+
+## Instalation:
+Install Termux, setup Termux and XFCE4 using script, and running XFCE4 desktop on Termux:X11. Instruction below⬇️
 
 ### You can visit the official [DroidMaster](https://github.com/LinuxDroidMaster/Termux-Desktops?tab=readme-ov-file) repository for more details and information.
 
@@ -12,7 +26,7 @@ Guide to install Termux, setup Termux using script, and running native Termux XF
 # 📚 Index
 * 🏁 [First steps](#first-steps)
 * 🐀 [Setup XFCE4 with script](#setup-xfce4)
-* 📋 [Shortcuts list](#shortcuts-list)
+* 📋 [Shortcut list](#shortcuts-list)
 
 <br>
 <br>
@@ -37,7 +51,7 @@ Guide to install Termux, setup Termux using script, and running native Termux XF
 you need to install:
 
 * [Termux F-Droid](https://f-droid.org/packages/com.termux) (not the beta version.)
-* [Termux:X11](https://github.com/termux/termux-x11/releases/tag/nightly) universal debug apk. Or, you can download [Termux:X11](My_Termux:X11.apk/app-universal-debug.apk) that i used.
+* [Termux:X11](https://github.com/termux/termux-x11/releases/tag/nightly) universal debug apk.
 
 in order for a full Linux desktop.
 
