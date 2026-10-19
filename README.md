@@ -75,7 +75,7 @@ pkg install wget
 ---
 <br>
 
-# 🐀 Setup Termux XFCE4 desktop using script<a name=setup-xfce4></a>
+# 🐀 Setup Termux and XFCE4 desktop using script<a name=setup-xfce4></a>
 Download the script:
 ```
 cd ~
