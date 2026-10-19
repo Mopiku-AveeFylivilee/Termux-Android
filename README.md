@@ -4,13 +4,13 @@
 
 Termux is a Linux terminal environtment, you can connect a server via SSH, coding/programming with VS Code, Vim, Nano, LibreOffice for office work, Kdenlive for video editing 'if your phone strong enough', and other applications. (Note that not all Applications suport Termux.)
 
-(OPTIONAL) running Arch Linux ARM64 PRoot with KDE Plasma desktop, (I only know that DE installation for Arch Linux.) or other Linux Distros on proot-distro for many apps support compare to Termux native.
+(OPTIONAL) running Arch Linux ARM64 PRoot with KDE Plasma desktop or XFCE4, (I only know two DE installation for Arch Linux.) or other Linux Distros on proot-distro for many apps support compare to Termux native.
 
 <br>
 <br>
 
 ## Requirement:
-* 5 GiB of free storage. (8 GiB if you install Arch Linux or other distros.)
+* 5 GiB of free storage.
 * Termux F-Droid or GitHub version. (not from Play Store.)
 * Termux:X11 for graphical user interface.
 
