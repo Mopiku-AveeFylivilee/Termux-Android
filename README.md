@@ -10,7 +10,7 @@ Termux is a Linux terminal environtment, you can connect a server via SSH, codin
 <br>
 
 ## Requirement:
-* 5 GiB of free storage. (8 GiB if you install Arch Linux or other distors.)
+* 5 GiB of free storage. (8 GiB if you install Arch Linux or other distros.)
 * Termux F-Droid or GitHub version. (not from Play Store.)
 * Termux:X11 for graphical user interface.
 
