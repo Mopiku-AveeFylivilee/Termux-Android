@@ -120,7 +120,7 @@ After finished, to apply the change, please loging-out and loging-in.
     </tr>
     <tr>
       <td>killx11</td>
-      <td>To force-close X11 server. ⚠️ It can cause damages to your data & system! Only use if you really want to kill X11.</td>
+      <td>To force-close X11 server. ⚠️ It can cause damages to your data! Only use if you really want to kill X11.</td>
     </tr>
   </tbody>
 <table>
