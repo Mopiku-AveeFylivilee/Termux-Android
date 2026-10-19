@@ -2,7 +2,7 @@
 
 # Termux-Android
 
-Termux is a Linux terminal environtment, you can connect a server via SSH, coding/programming with VS Code, Vim, Nano, LibreOffice for office work, Kdenlive for video editing 'if your phone strong enough', and other applications. (Note that not all Applications suport Termux.)
+Termux is a Linux terminal environtment, you can connect a server via SSH, coding/programming with VS Code, Vim, Nano, LibreOffice for office work, Kdenlive for video editing 'if your phone strong enough', and other applications. (Note that not all Applications support Termux.)
 
 (OPTIONAL) running Arch Linux ARM64 PRoot with KDE Plasma desktop or XFCE4, (I only know two DE installation for Arch Linux.) or other Linux Distros on proot-distro for many apps support compare to Termux native.
 
