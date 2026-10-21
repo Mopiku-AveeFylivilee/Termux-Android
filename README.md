@@ -61,7 +61,7 @@ in order for a full Linux desktop.
 
 ⚠️ Do not install Termux from Play Store!
 
-Update Termux and install wget:
+Update pakage and install wget:
 
 ```
 pkg update
@@ -119,10 +119,13 @@ After finished, to apply the change, please loging-out and loging-in.
     </tr>
     <tr>
       <td>killx11</td>
-      <td>To force-close X11 server. ⚠️ It can cause damages to your data! Only use if you really want to kill X11.</td>
+      <td>To force-close X11 server. </td>
     </tr>
   </tbody>
 <table>
+
+⚠️ Shortcut 'killx11' low potentially can damages your application's data if there still running on X11, only use if you really want to kill X11.
+
 Don't run multiple desktop launchers at the same time, it's just like 'killx11' that force-close X11 server.
   
 <br>
