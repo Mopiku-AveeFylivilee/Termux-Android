@@ -30,7 +30,7 @@ Install Termux, setup Termux and XFCE4 using script, running XFCE4 desktop on Te
 # 📚 Index
 * 🏁 [First steps](#first-steps)
 * 🐀 [Setup XFCE4 with script](#setup-xfce4)
-* 📋 [Shortcut list](#shortcuts-list)
+* 📋 [Shortcut list](#shortcuts-menu)
 
 <br>
 <br>
@@ -65,7 +65,6 @@ Update Termux and install wget:
 
 ```
 pkg update
-pkg upgrade
 pkg install wget
 ```
 
@@ -97,11 +96,11 @@ After finished, to apply the change, please loging-out and loging-in.
 ---
 <br>
 
-# 📋 Shortcuts list:<a name=shortcuts-list>
+# 📋 Shortcuts menu:<a name=shortcuts-menu>
 <table>
   <thead>
     <tr>
-      <th scope="col" colspan="6">Instructions</th>
+      <th scope="col" colspan="6">List</th>
     </tr>
     <tr>
         <th scope="col">Shortcuts:</th>
