@@ -3,8 +3,8 @@ clear
 
 # Update and install needed packages
 # --- safer shell options (no -e so we can handle errors) ---
-set -u
-trap 'echo "Script terminated unexpectedly"; exit 1' ERR
+#set -u
+#trap 'echo "Script terminated unexpectedly"; exit 1' ERR
 
 # Helper: install with retries
 install_with_retries() {
@@ -38,7 +38,7 @@ install_with_retries() {
 
 # Update once first (best-effort)
 echo -e "\e[0;32mUpdating package lists...\e[0m"
-pkg update -y && pkg upgrade -y
+pkg update && pkg upgrade -y
 
 # Packages to install (one by one)
 PACKAGES=(
@@ -48,8 +48,6 @@ PACKAGES=(
   pulseaudio
   wget
   git
-  dialog
-  fastfetch
   vulkan-loader
   mesa
   virglrenderer-android
