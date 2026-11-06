@@ -3,8 +3,8 @@ clear
 
 # Update and install needed packages
 # --- safer shell options (no -e so we can handle errors) ---
-#set -u
-#trap 'echo "Script terminated unexpectedly"; exit 1' ERR
+set -u
+trap 'echo "Script terminated unexpectedly"; exit 1' ERR
 
 # Helper: install with retries
 install_with_retries() {
