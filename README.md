@@ -23,7 +23,7 @@ For the desktop, i recommend you to use XFCE4, also you can choose KDE Plasma as
 <br>
 
 ## Instalation:
-Install Termux, setup Termux and XFCE4 or Plasma using script, running XFCE4 desktop on Termux:X11. Instruction below⬇️
+Install Termux, setup Termux and XFCE4 or Plasma using script, running desktop on Termux:X11. Instruction below⬇️
 
 <br>
 <br>
