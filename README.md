@@ -2,10 +2,15 @@
 
 # Termux-Android
 
-Termux is a Linux terminal environtment, you can connect a server via SSH, coding/programming with VS Code, Vim, Nano, LibreOffice for office work, Kdenlive for video editing 'if your phone strong enough', and other applications. (Note that not all Applications support Termux.)
+Termux is a Linux terminal environtment, you can connect a server via SSH, programing using Nano, Vim, and any terminal-based apps.
 
-(OPTIONAL) running Arch Linux ARM64 PRoot with KDE Plasma desktop or XFCE4, (I only know two DE installation for Arch Linux.) or other Linux Distros on proot-distro for many apps support compare to Termux native.
+Working on desktop environment: coding with VS Code, LibreOffice for office work, Kdenlive for video editing 'if your phone strong enough', and other applications. (Note that not all Applications support Termux.)
 
+For the desktop, i recommend you to use XFCE4, also you can choose KDE Plasma as your main desktop or both, but, KDE Plasma is a little heavier than XFCE4.
+
+(OPTIONAL) running Arch Linux ARM64 PRoot with KDE Plasma desktop or XFCE4, (I only know two DE installation for Arch Linux.) or other Linux Distros on proot-distro for many apps support compared to Termux native.
+
+### You can visit the official [DroidMaster](https://github.com/LinuxDroidMaster/Termux-Desktops?tab=readme-ov-file) repository for more detail installation and information.
 <br>
 <br>
 
@@ -18,18 +23,14 @@ Termux is a Linux terminal environtment, you can connect a server via SSH, codin
 <br>
 
 ## Instalation:
-Install Termux, setup Termux and XFCE4 using script, running XFCE4 desktop on Termux:X11. Instruction below⬇️
-
-<br>
-
-### You can visit the official [DroidMaster](https://github.com/LinuxDroidMaster/Termux-Desktops?tab=readme-ov-file) repository for more details and information.
+Install Termux, setup Termux and XFCE4 or Plasma using script, running XFCE4 desktop on Termux:X11. Instruction below⬇️
 
 <br>
 <br>
 
 # 📚 Index
 * 🏁 [First steps](#first-steps)
-* 🐀 [Setup XFCE4 with script](#setup-xfce4)
+* 💻 [Setup desktop with script](#setup-termux)
 * 📋 [Shortcut list](#shortcuts-menu)
 
 <br>
@@ -41,7 +42,7 @@ Install Termux, setup Termux and XFCE4 using script, running XFCE4 desktop on Te
 
 # Termux Environment Preview
 
-| Native |
+| XFCE4 |
 |---------------------------------------------|
 | <img src="/Documentation/images/preview_native.jpg"/> |
 
@@ -64,8 +65,7 @@ in order for a full Linux desktop.
 Update pakage and install wget:
 
 ```
-pkg update
-pkg install wget
+pkg update && pkg install wget
 ```
 
 <br>
@@ -74,16 +74,24 @@ pkg install wget
 ---
 <br>
 
-# 🐀 Setup Termux and XFCE4 desktop using script<a name=setup-xfce4></a>
-Download the script:
+# 💻 Setup Termux and XFCE4 or Plasma desktop using script<a name=setup-termux></a>
+### Download the script:
+XFCE4
 ```
 wget https://raw.githubusercontent.com/Mopiku-AveeFylivilee/Termux-Android/refs/heads/main/scripts/Termux_setup/termux_setup.sh
 ```
-
-Give the script permission, and execute it:
+KDE Plasma
 ```
-chmod +x termux_setup.sh
-./termux_setup.sh
+wget https://raw.githubusercontent.com/Mopiku-AveeFylivilee/Termux-Android/refs/heads/main/scripts/Termux_setup/set_termuxkde.sh
+```
+### Give the script permission, and execute it:
+XFCE4
+```
+chmod +x termux_setup.sh && ./termux_setup.sh
+```
+KDE Plasma
+```
+chmod +x set_termuxkde.sh && ./set_termuxkde.sh
 ```
 
 After finished, to apply the change, please loging-out and loging-in.
@@ -123,7 +131,7 @@ After finished, to apply the change, please loging-out and loging-in.
   </tbody>
 <table>
 
-⚠️ Shortcut 'killx11' low potentially can damages your application's data if there still running on X11, only use if you really want to kill X11.
+⚠️ Shortcut 'killx11' can potentially damages your application's data if there still running on X11, so be careful.
 
 Don't run multiple desktop launchers at the same time, it's just like 'killx11' that force-close X11 server.
   
