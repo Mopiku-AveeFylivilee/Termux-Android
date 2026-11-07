@@ -2,7 +2,7 @@
 
 # Termux-Android
 
-Termux is a Linux terminal environtment, you can connect a server via SSH, programing using Nano, Vim, and any terminal-based apps.
+Termux is a Linux terminal environtment, you can connect server via SSH, programing using Nano, Vim, and any terminal-based apps.
 
 Working on desktop environment: coding with VS Code, LibreOffice for office work, Kdenlive for video editing 'if your phone strong enough', and other applications. (Note that not all Applications support Termux.)
 
