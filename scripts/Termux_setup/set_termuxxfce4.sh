@@ -96,7 +96,7 @@ echo #
 echo 'Modifying file .bashrc and creating .bash_profile...'
 # .bashrc
 cat << 'EOF' > ~/.bashrc
-# Script shortcut.
+# Script shortcuts.
 alias xfceD="~/startxfce4_termux.sh &"
 
 # Command shortcuts.
