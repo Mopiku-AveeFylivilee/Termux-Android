@@ -78,7 +78,7 @@ pkg update && pkg install wget
 ### Download the script:
 XFCE4
 ```
-wget https://raw.githubusercontent.com/Mopiku-AveeFylivilee/Termux-Android/refs/heads/main/scripts/Termux_setup/termux_setup.sh
+https://raw.githubusercontent.com/Mopiku-AveeFylivilee/Termux-Android/refs/heads/main/scripts/Termux_setup/set_termuxxfce4.sh
 ```
 KDE Plasma
 ```
@@ -87,7 +87,7 @@ wget https://raw.githubusercontent.com/Mopiku-AveeFylivilee/Termux-Android/refs/
 ### Give the script permission, and execute it:
 XFCE4
 ```
-chmod +x termux_setup.sh && ./termux_setup.sh
+chmod +x set_termuxxfce4.sh && ./set_termuxxfce4.sh
 ```
 KDE Plasma
 ```
@@ -114,15 +114,14 @@ After finished, to apply the change, please loging-out and loging-in.
         <th scope="col">Information:</th>
     </tr>
   </thead>
-
   <tbody>
     <tr>
-      <td>desktop</td>
+      <td>xfceD</td>
       <td>To start XFCE4 desktop.</td>
     </tr>
     <tr>
-      <td>xorg11</td>
-      <td>To start X11 without desktop environment.</td>
+      <td>kdeD</td>
+      <td>To start KDE Plasma desktop.</td>
     </tr>
     <tr>
       <td>killx11</td>
