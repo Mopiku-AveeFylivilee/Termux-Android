@@ -42,9 +42,9 @@ Install Termux, setup Termux and XFCE4 or Plasma using script, running desktop o
 
 # Termux Environment Preview
 
-| XFCE4 |
-|---------------------------------------------|
-| <img src="/Documentation/images/preview_native.jpg"/> |
+| XFCE4 | KDE Plasma |
+|---------------------------------------------|---------------------------------------------|
+| <img src="/Documentation/images/termux_xfce4.jpg"/> | <img src="/Documentation/images/termux_kde.jpg"/> |
 
 
 ---
