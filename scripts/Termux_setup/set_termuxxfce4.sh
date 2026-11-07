@@ -96,12 +96,11 @@ echo #
 echo 'Modifying file .bashrc and creating .bash_profile...'
 # .bashrc
 cat << 'EOF' > ~/.bashrc
-# Script shortcuts.
-alias desktop="~/startxfce4_termux.sh &"
-alias xorg11="~/startx11.sh &"
+# Script shortcut.
+alias xfceD="~/startxfce4_termux.sh &"
 
 # Command shortcuts.
-alias stolist="du -ah --max-depth=1"
+alias slist="du -ah --max-depth=1"
 alias killx11='echo "Killing Xorg11..." && kill -9 $(pgrep -f "termux.x11") 2>/dev/null'
 EOF
 # .bash_profile
@@ -124,8 +123,8 @@ then
 fi
 EOF
 
-# Make two launcher scripts.
-echo "Making two launcher scripts..."
+# Make one launcher scripts.
+echo "Making one launcher scripts..."
 # startxfce4_termux.sh
 cat << 'EOF' > ~/startxfce4_termux.sh
 #!/data/data/com.termux/files/usr/bin/bash
@@ -172,51 +171,11 @@ clear
 
 exit 0
 EOF
-# startx11.sh
-cat << 'EOF' > ~/startx11.sh
-#!/usr/bin/bash
-
-clear
-echo "Starting Termux:X11 on port: 0"
-
-# Kill open X11 processes
-kill -9 $(pgrep -f "termux.x11") 2>/dev/null
-
-# Enable PulseAudio over Network
-pulseaudio --start --load="module-native-protocol-tcp auth-ip-acl=127.0.0.1 auth-anonymous=1" --exit-idle-time=-1
-
-# Prepare termux-x11 session
-export XDG_RUNTIME_DIR=${TMPDIR}
-termux-x11 :0 &
-sleep 1
-
-# Launch Termux X11 main activity
-am start --user 0 -n com.termux.x11/com.termux.x11.MainActivity
-sleep 1
-
-# Set audio server
-export 'PULSE_SERVER=127.0.0.1'
-
-# Start graphical server
-virgl_test_server_android &
-
-# Export display with GPU acceleration on port: 0 and launch DBus
-export GALLIUM_DRIVER=virpipe MESA_GL_VERSION_OVERRIDE=4.0 DISPLAY=:0 && dbus-launch &
-
-# Run window manager
-xfwm4 &
-
-# Auto start app
-thunar &
-xfce4-terminal &
-
-exit 0
-EOF
 
 # Give the launcher scripts permission to execute.
 echo #
 echo "Giving two launcher scripts permission to execute..."
-cd ~ && chmod +x startxfce4_termux.sh startx11.sh
+cd ~ && chmod +x startxfce4_termux.sh
 
 echo #
 echo -e "\e[0;32mTermux setup was complited!\e[0m"
