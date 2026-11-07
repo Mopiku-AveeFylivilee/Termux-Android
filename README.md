@@ -8,7 +8,7 @@ Working on desktop environment: coding with VS Code, LibreOffice for office work
 
 For the desktop, i recommend you to use XFCE4, also you can choose KDE Plasma as your main desktop or both, but, KDE Plasma is a little heavier than XFCE4.
 
-(OPTIONAL) running Arch Linux ARM64 PRoot with KDE Plasma desktop or XFCE4, (I only know two DE installation for Arch Linux.) or other Linux Distros on proot-distro for many apps support compared to Termux native.
+(OPTIONAL) running Arch Linux ARM64 PRoot with KDE Plasma or XFCE4 desktop, (I only know two DE installation for Arch Linux.) or other Linux Distros on proot-distro for many apps support compared to Termux native.
 
 ### You can visit the official [DroidMaster](https://github.com/LinuxDroidMaster/Termux-Desktops?tab=readme-ov-file) repository for more detail installation and information.
 <br>
@@ -133,7 +133,7 @@ After finished, to apply the change, please loging-out and loging-in.
 
 ⚠️ Shortcut 'killx11' can potentially damages your application's data if there still running on X11, so be careful.
 
-Don't run multiple desktop launchers at the same time, it's just like 'killx11' that force-close X11 server.
+Don't run multiple desktop launchers at the same time, it's just like 'killx11' that force-close X11 server to make the new one.
   
 <br>
 <br>
