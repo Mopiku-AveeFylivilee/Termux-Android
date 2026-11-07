@@ -99,8 +99,6 @@ echo #
 echo 'Modifying file .bashrc and creating .bash_profile...'
 # .bashrc
 cat << 'EOF' > ~/.bashrc
-eval "$(starship init bash)"
-
 # Script shortcuts.
 alias kdeD="~/startkde_termux.sh &"
 
@@ -178,7 +176,7 @@ exit 0
 EOF
 
 # Give the launcher scripts permission to execute.
-echo "giving the launcher permission..."
+echo "giving the launcher script permission..."
 chmod +x ~/startkde_termux.sh
 
 echo #
