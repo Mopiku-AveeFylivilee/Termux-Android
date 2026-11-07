@@ -50,10 +50,10 @@ PACKAGES=(
   git
   konsole
   dolphin
-  starship
   gwenview
   vlc-qt
   vim
+  kdegraphics-thumbnailers
   vulkan-loader
   mesa
   virglrenderer-android
@@ -102,10 +102,10 @@ cat << 'EOF' > ~/.bashrc
 eval "$(starship init bash)"
 
 # Script shortcuts.
-alias desktop="~/startkde_termux.sh &"
+alias kdeD="~/startkde_termux.sh &"
 
 # Command shortcuts.
-alias lsist="du -ah --max-depth=1"
+alias slist="du -ah --max-depth=1"
 alias killx11='echo "Killing Xorg11..." && kill -9 $(pgrep -f "termux.x11") 2>/dev/null'
 EOF
 # .bash_profile
@@ -178,8 +178,8 @@ exit 0
 EOF
 
 # Give the launcher scripts permission to execute.
-cd ~
-chmod +x startkde_termux.sh startx11.sh
+echo "giving the launcher permission..."
+chmod +x ~/startkde_termux.sh
 
 echo #
 echo -e "\e[0;32mTermux setup was complited!\e[0m"
