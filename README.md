@@ -6,11 +6,11 @@ Termux is a Linux terminal environtment, you can connect server via SSH, program
 
 Working on desktop environment: coding with VS Code, LibreOffice for office work, Kdenlive for video editing 'if your phone strong enough', and other applications. (Note that not all Applications support Termux.)
 
-For the desktop, i recommend you to use XFCE4, also you can choose KDE Plasma as your main desktop or both, but, KDE Plasma is a little heavier than XFCE4.
+For the desktop, i recommend you to use XFCE4, also you can choose KDE Plasma as your main desktop, or both, but, KDE Plasma is a little heavier than XFCE4.
 
 (OPTIONAL) running Arch Linux ARM64 PRoot with KDE Plasma or XFCE4 desktop, (I only know two DE installation for Arch Linux.) or other Linux Distros on proot-distro for many apps support compared to Termux native.
 
-### You can visit the official [DroidMaster](https://github.com/LinuxDroidMaster/Termux-Desktops?tab=readme-ov-file) repository for more detail installation and information.
+### You can visit the official [DroidMaster](https://github.com/LinuxDroidMaster/Termux-Desktops?tab=readme-ov-file) repository for more installation details and information.
 <br>
 <br>
 
