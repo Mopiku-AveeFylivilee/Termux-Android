@@ -74,26 +74,15 @@ pkg update && pkg install wget
 ---
 <br>
 
-# 💻 Setup Termux and XFCE4 or Plasma desktop using script<a name=setup-termux></a>
-### Download the script:
-XFCE4
+# 💻 Setup Termux and the desktop using script<a name=setup-termux></a>
+Download the script, give permission, and execute:
 ```
-https://raw.githubusercontent.com/Mopiku-AveeFylivilee/Termux-Android/refs/heads/main/scripts/Termux_setup/set_termuxxfce4.sh
+wget https://raw.githubusercontent.com/Mopiku-AveeFylivilee/Termux-Android/refs/heads/main/scripts/Termux_setup/termux_setup.sh && chmod +x termux_setup.sh && ./termux_setup.sh
 ```
-KDE Plasma
+If the script stop with errors, run it again:
 ```
-wget https://raw.githubusercontent.com/Mopiku-AveeFylivilee/Termux-Android/refs/heads/main/scripts/Termux_setup/set_termuxkde.sh
+./termux_setup.sh
 ```
-### Give the script permission, and execute it:
-XFCE4
-```
-chmod +x set_termuxxfce4.sh && ./set_termuxxfce4.sh
-```
-KDE Plasma
-```
-chmod +x set_termuxkde.sh && ./set_termuxkde.sh
-```
-
 After finished, to apply the change, please loging-out and loging-in.
 * press (CTRL + D) to logout.
 
