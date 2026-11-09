@@ -83,7 +83,7 @@ If the script stop with errors, run it again:
 ```
 ./termux_setup.sh
 ```
-After finished, to apply the change, please loging-out and loging-in.
+After finished, to apply the change, please login-out and login-in.
 * press (CTRL + D) to logout.
 
 <br>
