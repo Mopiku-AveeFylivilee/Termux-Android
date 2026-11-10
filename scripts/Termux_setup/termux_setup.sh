@@ -51,6 +51,7 @@ PACKAGES=(
   dialog
   vlc-qt
   firefox
+  xfce4-taskmanager
   vim
   vulkan-loader
   mesa
@@ -90,7 +91,7 @@ show_menu() {
             PACKAGES=(
               xfce4
             )
-            script1="https://raw.githubusercontent.com/Mopiku-AveeFylivilee/Termux-Android/refs/heads/main/scripts/Termux_setup/startxfce4_termux.sh"
+            script1="https://raw.githubusercontent.com/MopikuAveely/Termux-Android/refs/heads/main/scripts/Termux_setup/startxfce4_termux.sh"
             script2="startxfce4_termux.sh"
             ln -sf ~/startxfce4_termux.sh ~/active_desktop.sh
             ;;
@@ -103,7 +104,7 @@ show_menu() {
               gwenview
               ark
             )
-            script1="https://raw.githubusercontent.com/Mopiku-AveeFylivilee/Termux-Android/refs/heads/main/scripts/Termux_setup/startkde_termux.sh"
+            script1="https://raw.githubusercontent.com/MopikuAveely/Termux-Android/refs/heads/main/scripts/Termux_setup/startkde_termux.sh"
             script2="startkde_termux.sh"
             ln -sf ~/startkde_termux.sh ~/active_desktop.sh
             ;;
@@ -128,10 +129,10 @@ if [ -f ~/termux_install_failed.txt ]; then
   exit 1
 fi
 
-# Download script launcher from Avee's repository
+# Download script launcher from Aveely's repository
 if [ ! -f ~/.scripts/$script2 ]
   mkdir ~/.scripts && cd ~/.scripts
-  echo -e "\e[0;32mDownloading script launcher from Avee's repo\e[0m"
+  echo -e "\e[0;32mDownloading script launcher from Aveely's repo\e[0m"
   wget $script1
   chmod +x $script2
 elif [ ! -f ~/$script2 ]; then
