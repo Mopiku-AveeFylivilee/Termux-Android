@@ -2,7 +2,7 @@
 
 # Termux-Android
 
-Termux is a Linux terminal environtment, you can connect server via SSH, programing using Nano, Vim, and any terminal-based apps.
+Termux is a Linux terminal environment, you can connect server via SSH, programing using Nano, Vim, and any terminal-based apps.
 
 Working on desktop environment: coding with VS Code, LibreOffice for office work, and other applications. (Note that not all Applications support Termux.)
 
@@ -22,7 +22,7 @@ For the desktop, i recommend you to use XFCE4, also you can choose KDE Plasma as
 <br>
 <br>
 
-## Instalation:
+## Installation:
 Install Termux, setup Termux and XFCE4 or Plasma using script, running desktop on Termux:X11. Instruction below⬇️
 
 <br>
@@ -30,7 +30,7 @@ Install Termux, setup Termux and XFCE4 or Plasma using script, running desktop o
 
 # 📚 Index
 * 🏁 [First steps](#first-steps)
-* 💻 [Setup desktop with script](#setup-termux)
+* 💻 [Setup with script](#setup-termux)
 * 📋 [Shortcut list](#shortcuts-menu)
 
 <br>
@@ -62,7 +62,7 @@ in order for a full Linux desktop.
 
 ⚠️ Do not install Termux from Play Store!
 
-Update pakage and install wget:
+Update package and install wget:
 
 ```
 pkg update && pkg install wget
