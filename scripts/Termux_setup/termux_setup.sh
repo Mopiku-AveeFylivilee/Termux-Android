@@ -93,7 +93,7 @@ show_menu() {
             )
             script1="https://raw.githubusercontent.com/MopikuAveely/Termux-Android/refs/heads/main/scripts/Termux_setup/startxfce4_termux.sh"
             script2="startxfce4_termux.sh"
-            ln -sf ~/startxfce4_termux.sh ~/active_desktop.sh
+            ln -sf ~/.scripts/startxfce4_termux.sh ~/active_desktop.sh
             ;;
         2)
             clear
@@ -106,7 +106,7 @@ show_menu() {
             )
             script1="https://raw.githubusercontent.com/MopikuAveely/Termux-Android/refs/heads/main/scripts/Termux_setup/startkde_termux.sh"
             script2="startkde_termux.sh"
-            ln -sf ~/startkde_termux.sh ~/active_desktop.sh
+            ln -sf ~/.scripts/startkde_termux.sh ~/active_desktop.sh
             ;;
     esac
 }
@@ -130,15 +130,15 @@ if [ -f ~/termux_install_failed.txt ]; then
 fi
 
 # Download script launcher from Aveely's repository
-if [ ! -f ~/.scripts/$script2 ]
-  mkdir ~/.scripts && cd ~/.scripts
+if [ ! -f ~/.scripts/$script2 ]; then
   echo -e "\e[0;32mDownloading script launcher from Aveely's repo\e[0m"
-  wget $script1
-  chmod +x $script2
-elif [ ! -f ~/$script2 ]; then
-  echo -e "\e[0;31mStop the script because the script launcher failed to install.\e[0m"
-  echo "Rerun the script with executing: ./termux_setup.sh"
-  exit 1
+  wget -P ~/.scripts $script1
+  chmod +x ~/.scripts/$script2
+  if [ ! -f ~/.scripts/$script2 ]; then
+    echo -e "\e[0;31mStop the script because the script launcher failed to install.\e[0m"
+    echo "Rerun the script with executing: ./termux_setup.sh"
+    exit 1
+  fi
 fi
 
 # Make the boot dialog if user have two scripts launcher
@@ -149,12 +149,12 @@ if [ -f ~/.scripts/startxfce4_termux.sh ] && [ -f ~/.scripts/startkde_termux.sh 
   show_menu() {
       CHOICE=$(dialog --clear \
                  --title "TERMUX BOOTING MENU" \
-                  --menu "Choice one of them." \
+                  --menu "Choose one of them." \
                   9 43 2 \
                   1 "Termux Plasma Desktop (native)" \
                   2 "Termux XFCE4 Desktop (Native)" \
                   --stdout)
-
+  
       case $CHOICE in
           1)
               clear
@@ -176,6 +176,10 @@ if [ -f ~/.scripts/startxfce4_termux.sh ] && [ -f ~/.scripts/startkde_termux.sh 
 
   show_menu
 EOF
+
+  chmod +x ~/.scripts/boot_menu.sh
+  ln -sf ~/.scripts/boot_menu.sh ~/active_desktop.sh
+  rm -rf ~/termux_setup.sh
 fi
 
 # Modify .bashrc and create .bash_profile
@@ -185,8 +189,8 @@ echo 'Modifying file .bashrc and creating .bash_profile...'
 # .bashrc
 cat << 'EOF' > ~/.bashrc
 # Script shortcuts.
-alias xfceD="~/startxfce4_termux.sh &"
-alias kdeD="~/startkde_termux.sh &"
+alias xfceD="~/.scripts/startxfce4_termux.sh &"
+alias kdeD="~/.scripts/startkde_termux.sh &"
 
 # Command shortcuts.
 alias slist="du -ah --max-depth=1"
@@ -214,6 +218,7 @@ then
     source ~/.bashrc
 fi
 EOF
+
 
 # Setup storage.
 echo #
