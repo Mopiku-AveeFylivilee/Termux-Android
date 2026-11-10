@@ -51,7 +51,6 @@ PACKAGES=(
   dialog
   vlc-qt
   firefox
-  xfce4-taskmanager
   vim
   vulkan-loader
   mesa
@@ -91,7 +90,7 @@ show_menu() {
             PACKAGES=(
               xfce4
             )
-            script1="https://raw.githubusercontent.com/MopikuAveely/Termux-Android/refs/heads/main/scripts/Termux_setup/startxfce4_termux.sh"
+            script1="https://raw.githubusercontent.com/Mopiku-AveeFylivilee/Termux-Android/refs/heads/main/scripts/Termux_setup/startxfce4_termux.sh"
             script2="startxfce4_termux.sh"
             ln -sf ~/startxfce4_termux.sh ~/active_desktop.sh
             ;;
@@ -104,7 +103,7 @@ show_menu() {
               gwenview
               ark
             )
-            script1="https://raw.githubusercontent.com/MopikuAveely/Termux-Android/refs/heads/main/scripts/Termux_setup/startkde_termux.sh"
+            script1="https://raw.githubusercontent.com/Mopiku-AveeFylivilee/Termux-Android/refs/heads/main/scripts/Termux_setup/startkde_termux.sh"
             script2="startkde_termux.sh"
             ln -sf ~/startkde_termux.sh ~/active_desktop.sh
             ;;
@@ -129,16 +128,53 @@ if [ -f ~/termux_install_failed.txt ]; then
   exit 1
 fi
 
-# Download script launcher from Aveely's repository
-if [ ! -f ~/$script2 ]
-  cd ~
-  echo -e "\e[0;32mDownloading script launcher from Aveely's repo\e[0m"
+# Download script launcher from Avee's repository
+if [ ! -f ~/.scripts/$script2 ]
+  mkdir ~/.scripts && cd ~/.scripts
+  echo -e "\e[0;32mDownloading script launcher from Avee's repo\e[0m"
   wget $script1
   chmod +x $script2
 elif [ ! -f ~/$script2 ]; then
   echo -e "\e[0;31mStop the script because the script launcher failed to install.\e[0m"
   echo "Rerun the script with executing: ./termux_setup.sh"
   exit 1
+fi
+
+# Make the boot dialog if user have two scripts launcher
+if [ -f ~/.scripts/startxfce4_termux.sh ] && [ -f ~/.scripts/startkde_termux.sh ]; then
+  cat << 'EOF' > ~/.scripts/boot_menu.sh
+  #!/data/data/com.termux/files/usr/bin/bash
+
+  show_menu() {
+      CHOICE=$(dialog --clear \
+                 --title "TERMUX BOOTING MENU" \
+                  --menu "Choice one of them." \
+                  9 43 2 \
+                  1 "Termux Plasma Desktop (native)" \
+                  2 "Termux XFCE4 Desktop (Native)" \
+                  --stdout)
+
+      case $CHOICE in
+          1)
+              clear
+              echo "Starting Arch KDE Plasma..."
+	            echo
+              ~/.scripts/startkde_termux.sh
+              ;;
+          2)
+              clear
+              echo "Starting Termux XFCE4..."
+	            echo
+              ~/.scripts/startxfce4_termux.sh
+              ;;
+          *)
+              clear
+              ;;
+      esac
+  }
+
+  show_menu
+EOF
 fi
 
 # Modify .bashrc and create .bash_profile
