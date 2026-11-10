@@ -10,7 +10,7 @@ For the desktop, i recommend you to use XFCE4, also you can choose KDE Plasma as
 
 (OPTIONAL) running Arch Linux ARM64 PRoot with KDE Plasma or XFCE4 desktop, (I only know two DE installation for Arch Linux.) or other Linux Distros on proot-distro for many apps support compared to Termux native.
 
-### You can visit the official [DroidMaster](https://github.com/LinuxDroidMaster/Termux-Desktops?tab=readme-ov-file) repository for more installation details and information.
+### You can visit the official [DroidMaster repository](https://github.com/LinuxDroidMaster/Termux-Desktops?tab=readme-ov-file) for more installation details and information.
 <br>
 <br>
 
@@ -77,9 +77,9 @@ pkg update && pkg install wget
 # 💻 Setup Termux and the desktop using script<a name=setup-termux></a>
 Download the script, give permission, and execute:
 ```
-wget https://raw.githubusercontent.com/Mopiku-Avyle/Termux-Android/refs/heads/main/scripts/Termux_setup/termux_setup.sh && chmod +x termux_setup.sh && ./termux_setup.sh
+wget https://raw.githubusercontent.com/MopikuAveely/Termux-Android/refs/heads/main/scripts/Termux_setup/termux_setup.sh && chmod +x termux_setup.sh && ./termux_setup.sh
 ```
-If the script stop with errors, run it again:
+If the script stop with errors, check and run it again:
 ```
 ./termux_setup.sh
 ```
@@ -96,7 +96,7 @@ After finished, to apply the change, please login-out and login-in.
 <table>
   <thead>
     <tr>
-      <th scope="col" colspan="6">List</th>
+      <th scope="col" colspan="6">Execute it on your Termux</th>
     </tr>
     <tr>
         <th scope="col">Shortcuts:</th>
