@@ -77,7 +77,7 @@ pkg update && pkg install wget
 # 💻 Setup Termux and the desktop using script<a name=setup-termux></a>
 Download the script, give permission, and execute:
 ```
-wget https://raw.githubusercontent.com/Mopiku-AveeFylivilee/Termux-Android/refs/heads/main/scripts/Termux_setup/termux_setup.sh && chmod +x termux_setup.sh && ./termux_setup.sh
+wget https://raw.githubusercontent.com/Mopiku-Avyle/Termux-Android/refs/heads/main/scripts/Termux_setup/termux_setup.sh && chmod +x termux_setup.sh && ./termux_setup.sh
 ```
 If the script stop with errors, run it again:
 ```
