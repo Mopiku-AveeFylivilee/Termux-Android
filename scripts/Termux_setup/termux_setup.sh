@@ -77,7 +77,7 @@ fi
 #
 show_menu() {
     CHOICE=$(dialog --clear \
-                --title "CHOOSE YOUR DESKTOP ENVIRONTMENT" \
+                --title "SELECT YOUR DESKTOP ENVIRONTMENT" \
                 --no-cancel \
                 --menu "It's touch screen, or you can use arrow bottons on your external key bar to select. Enter to confirm." \
                 11 45 2 \
