@@ -4,7 +4,7 @@
 
 Termux is a Linux terminal environtment, you can connect server via SSH, programing using Nano, Vim, and any terminal-based apps.
 
-Working on desktop environment: coding with VS Code, LibreOffice for office work, Kdenlive for video editing 'if your phone strong enough', and other applications. (Note that not all Applications support Termux.)
+Working on desktop environment: coding with VS Code, LibreOffice for office work, and other applications. (Note that not all Applications support Termux.)
 
 For the desktop, i recommend you to use XFCE4, also you can choose KDE Plasma as your main desktop, or both, but, KDE Plasma is a little heavier than XFCE4.
 
