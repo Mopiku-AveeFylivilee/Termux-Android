@@ -142,7 +142,7 @@ if [ ! -f ~/.scripts/$script2 ]; then
 fi
 
 # Make the boot dialog if user have two scripts launcher
-if [ -f ~/.scripts/startxfce4_termux.sh ] && [ -f ~/.scripts/startkde_termux.sh ]; then
+if [ -f ~/.scripts/startxfce4_termux.sh ] && [ -f ~/.scripts/startkde_termux.sh ] && [ ! -f ~/.scripts/boot_menu.sh ]; then
   cat << 'EOF' > ~/.scripts/boot_menu.sh
   #!/data/data/com.termux/files/usr/bin/bash
 
