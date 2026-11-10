@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/data/data/com.termux/files/usr/bin/bash
 clear
 
 # Update and install needed packages
@@ -65,19 +65,19 @@ done
 
 if [ -f ~/termux_install_failed.txt ]; then
   echo
-  echo -e "\e[0;31mSome pakages failed to install:\e[0m"
+  echo -e "\e[0;31mSome packages failed to install:\e[0m"
   cat ~/termux_install_failed.txt
-  echo -e "\e[0;33mYou can try to install the pakages manually with 'pkg i pakages_name'.\e[0m"
-  echo -e "\e[0;31mStop the script because some pakages fails to install.\e[0m"
+  echo -e "\e[0;33mYou can try to install the packages manually with 'pkg i packages_name'.\e[0m"
+  echo -e "\e[0;31mStop the script because some packages fails to install.\e[0m"
   echo "Rerun the script with executing: ./termux_setup.sh"
   rm -rf ~/termux_install_failed.txt
   exit 1
 fi
 
-#
+# Desktop environment selection
 show_menu() {
     CHOICE=$(dialog --clear \
-                --title "SELECT YOUR DESKTOP ENVIRONTMENT" \
+                --title "SELECT YOUR DESKTOP ENVIRONMENT" \
                 --no-cancel \
                 --menu "It's touch screen, or you can use arrow bottons on your external key bar to select. Enter to confirm." \
                 11 45 2 \
@@ -113,17 +113,17 @@ show_menu() {
 
 show_menu
 
-echo -e "\e[0;32mInstalling desktop environtment...\e[0m"
+echo -e "\e[0;32mInstalling desktop environment...\e[0m"
 for p in "${PACKAGES[@]}"; do
   install_with_retries "$p" 3
 done
 
 if [ -f ~/termux_install_failed.txt ]; then
   echo
-  echo -e "\e[0;31mSome pakages failed to install:\e[0m"
+  echo -e "\e[0;31mSome packages failed to install:\e[0m"
   cat ~/termux_install_failed.txt
-  echo -e "\e[0;33mYou can try to install the pakages manually with 'pkg i pakages_name'.\e[0m"
-  echo -e "\e[0;31mStop the script because some pakages fails to install.\e[0m"
+  echo -e "\e[0;33mYou can try to install the packages manually with 'pkg i packages_name'.\e[0m"
+  echo -e "\e[0;31mStop the script because some packages fails to install.\e[0m"
   echo "Rerun the script with executing: ./termux_setup.sh"
   rm -rf ~/termux_install_failed.txt
   exit 1
@@ -179,11 +179,10 @@ EOF
 
   chmod +x ~/.scripts/boot_menu.sh
   ln -sf ~/.scripts/boot_menu.sh ~/active_desktop.sh
-  rm -rf ~/termux_setup.sh
 fi
 
 # Modify .bashrc and create .bash_profile
-echo #
+echo
 echo 'Modifying file .bashrc and creating .bash_profile...'
 
 # .bashrc
@@ -200,7 +199,7 @@ EOF
 # .bash_profile
 cat << 'EOF' > ~/.bash_profile
 # Login desktop confirmation.
-echo #
+echo
 read -p "Login desktop? (y/N): " -n 1 -r
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
@@ -212,7 +211,7 @@ then
 fi
 clear
 
-# Calling .bashrc if the file exis.
+# Calling .bashrc if the file exists.
 if [ -f ~/.bashrc ]
 then
     source ~/.bashrc
@@ -221,22 +220,22 @@ EOF
 
 
 # Setup storage.
-echo #
+echo
 echo -e "\e[0;33mTHIS IS OPTIONAL.\e[0m"
 echo -e "\e[0;32mIf you want to link your device storage, please give the app permission to access your file.\e[0m"
 echo -e "\e[0;32mYou can setup it anytime with executing: 'termux-setup-storage'.\e[0m"
-echo #
+echo
 read -p "Link your device storage? (y/N): " -n 1 -r
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
-    echo #
+    echo
     echo -e "\e[0;32mLinking...\e[0m"
     termux-setup-storage
 fi
 
 
-echo #
-echo -e "\e[0;32mTermux setup was complited!\e[0m"
+echo
+echo -e "\e[0;32mTermux setup was completed!\e[0m"
 echo -e "\e[0;32mPlease login-out and login-in to apply the change.\e[0m"
 echo -e "\e[0;32m(Press: CTRL + D)\e[0m"
 
