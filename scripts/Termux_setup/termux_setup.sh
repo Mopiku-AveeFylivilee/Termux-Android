@@ -74,6 +74,9 @@ if [ -f ~/termux_install_failed.txt ]; then
   exit 1
 fi
 
+# Make .scripts directory in user's home directory
+mkdir -p ~/.scripts/
+
 # Desktop environment selection
 show_menu() {
     CHOICE=$(dialog --clear \
@@ -93,7 +96,7 @@ show_menu() {
             )
             script1="https://raw.githubusercontent.com/MopikuAveely/Termux-Android/refs/heads/main/scripts/Termux_setup/startxfce4_termux.sh"
             script2="startxfce4_termux.sh"
-            ln -sf ~/.scripts/startxfce4_termux.sh ~/active_desktop.sh
+            ln -sf ~/.scripts/startxfce4_termux.sh ~/.D
             ;;
         2)
             clear
@@ -106,7 +109,7 @@ show_menu() {
             )
             script1="https://raw.githubusercontent.com/MopikuAveely/Termux-Android/refs/heads/main/scripts/Termux_setup/startkde_termux.sh"
             script2="startkde_termux.sh"
-            ln -sf ~/.scripts/startkde_termux.sh ~/active_desktop.sh
+            ln -sf ~/.scripts/startkde_termux.sh ~/.D
             ;;
     esac
 }
@@ -139,6 +142,12 @@ if [ ! -f ~/.scripts/$script2 ]; then
     echo "Rerun the script with executing: ./termux_setup.sh"
     exit 1
   fi
+fi
+
+# Backup user's files .bashrc and .bash_profile to make the new files configuration
+mv ~/.bashrc ~/.bashrc_backup
+if [ -f ~/.bash_profile ]; then
+  mv ~/.bash_profile ~/.bash_profile_backup
 fi
 
 # Make the boot dialog if user have two scripts launcher
@@ -178,7 +187,7 @@ if [ -f ~/.scripts/startxfce4_termux.sh ] && [ -f ~/.scripts/startkde_termux.sh 
 EOF
 
   chmod +x ~/.scripts/boot_menu.sh
-  ln -sf ~/.scripts/boot_menu.sh ~/active_desktop.sh
+  ln -sf ~/.scripts/boot_menu.sh ~/.D
 fi
 
 # Modify .bashrc and create .bash_profile
@@ -205,8 +214,8 @@ if [[ $REPLY =~ ^[Yy]$ ]]
 then
     clear
     echo "Entering desktop mode..."
-    if [ -f ~/active_desktop.sh ]; then
-      ~/active_desktop.sh
+    if [ -f ~/.D ]; then
+      ~/.D
     fi
 fi
 clear
@@ -217,7 +226,6 @@ then
     source ~/.bashrc
 fi
 EOF
-
 
 # Setup storage.
 echo
@@ -232,7 +240,6 @@ then
     echo -e "\e[0;32mLinking...\e[0m"
     termux-setup-storage
 fi
-
 
 echo
 echo -e "\e[0;32mTermux setup was completed!\e[0m"
