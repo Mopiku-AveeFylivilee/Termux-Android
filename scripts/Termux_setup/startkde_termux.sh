@@ -24,7 +24,7 @@ sleep 1
 # Set audio server
 export 'PULSE_SERVER=127.0.0.1'
 
-# Run XFCE4 Desktop
+# Run KDE Plasma Desktop
 env DISPLAY=:0 GALLIUM_DRIVER=virpipe MESA_GL_VERSION_OVERRIDE=4.0 dbus-launch --exit-with-session startplasma-x11 > /dev/null 2>&1
 
 # If user logout, kill all server and Termux:X11
