@@ -145,9 +145,11 @@ if [ ! -f ~/.scripts/$script2 ]; then
 fi
 
 # Backup user's files .bashrc and .bash_profile to make the new files configuration
-mv ~/.bashrc ~/.bashrc_backup
-if [ -f ~/.bash_profile ]; then
-  mv ~/.bash_profile ~/.bash_profile_backup
+if [ ! -f ~/.bash_profile_backup ] && [ ! -f ~/.bashrc_backup ]; then
+  cp -p ~/.bashrc ~/.bashrc_backup
+  if [ -f ~/.bash_profile ] && [ ! -f ~/.bash_profile_backup ]; then
+    cp -p ~/.bash_profile ~/.bash_profile_backup
+  fi
 fi
 
 # Make the boot dialog if user have two scripts launcher
