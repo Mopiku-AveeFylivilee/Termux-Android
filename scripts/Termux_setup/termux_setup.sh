@@ -145,7 +145,7 @@ if [ ! -f ~/.scripts/$script2 ]; then
 fi
 
 # Backup user's files .bashrc and .bash_profile to make the new files configuration
-if [ ! -f ~/.bashrc_backup ]; then
+if [ -f ~/.bashrc ] && [ ! -f ~/.bashrc_backup ]; then
   cp -p ~/.bashrc ~/.bashrc_backup
 fi
 
