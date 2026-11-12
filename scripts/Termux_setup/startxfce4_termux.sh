@@ -28,19 +28,13 @@ export 'PULSE_SERVER=127.0.0.1'
 env DISPLAY=:0 GALLIUM_DRIVER=virpipe MESA_GL_VERSION_OVERRIDE=4.0 dbus-launch --exit-with-session xfce4-session > /dev/null 2>&1
 
 # If user logout, kill all server and Termux:X11
-read -p "Clear all script background prosses? (y/N): " -n 1 -r
-if [[ $REPLY =~ ^[Yy]$ ]]; then
-  # Stop the PulseAudio and graphical server on Termux
-  echo "Cleaning..."
-  kill -9 $(pgrep -f "termux.x11") 2>/dev/null
-  pkill -f termux-x11
-  killall -9 virgl_test_server 2>/dev/null
-  pkill virgl_test_server
-  pulseaudio --kill 2>/dev/null
-  pkill pulseaudio
-  # Force-close Termux-X11 application on Android
-  am force-stop com.termux.x11 > /dev/null 2>&1
-  clear
-fi
+# Stop the PulseAudio and graphical server on Termux
+kill -9 $(pgrep -f "termux.x11") 2>/dev/null
+pkill -f termux-x11
+killall -9 virgl_test_server 2>/dev/null
+pulseaudio --kill 2>/dev/null
+# Force-close Termux-X11 application on Android
+am force-stop com.termux.x11 > /dev/null 2>&1
+clear
 
 exit 0
