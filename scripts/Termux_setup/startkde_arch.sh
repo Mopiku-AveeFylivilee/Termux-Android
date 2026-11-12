@@ -28,19 +28,14 @@ sleep 1
 pd login archlinux --shared-tmp -- /bin/bash -c 'export PULSE_SERVER=127.0.0.1 && export XDG_RUNTIME_DIR=${TMPDIR} && export GS_NO_SANDBOX=1 && su - User_account -c "DISPLAY=:0 dbus-launch startplasma-x11"'
 
 # If user logout, kill all server and Termux:X11
-read -p "Clear all script background prosses? (y/N): " -n 1 -r
-if [[ $REPLY =~ ^[Yy]$ ]]; then
-  # Stop the PulseAudio and graphical server on Termux
-  echo "Cleaning..."
-  kill -9 $(pgrep -f "termux.x11") 2>/dev/null
-  pkill -f termux-x11
-  killall -9 virgl_test_server 2>/dev/null
-  pkill virgl_test_server
-  pulseaudio --kill 2>/dev/null
-  pkill pulseaudio
-  # Force-close Termux-X11 application on Android
-  am force-stop com.termux.x11 > /dev/null 2>&1
-  clear
-fi
+# Stop the PulseAudio and graphical server on Termux
+kill -9 $(pgrep -f "termux.x11") 2>/dev/null
+pkill -f termux-x11
+killall -9 virgl_test_server 2>/dev/null
+pulseaudio --kill 2>/dev/null
+
+# Force-close Termux-X11 application on Android
+am force-stop com.termux.x11 > /dev/null 2>&1
+clear
 
 exit 0
