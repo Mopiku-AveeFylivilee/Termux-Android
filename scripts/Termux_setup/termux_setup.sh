@@ -231,17 +231,22 @@ fi
 EOF
 
 # Setup storage.
-echo
-echo -e "\e[0;33mTHIS IS OPTIONAL.\e[0m"
-echo -e "\e[0;32mIf you want to link your device storage, please give the app permission to access your file.\e[0m"
-echo -e "\e[0;32mYou can setup it anytime with executing: 'termux-setup-storage'.\e[0m"
-echo
-read -p "Link your device storage? (y/N): " -n 1 -r
-if [[ $REPLY =~ ^[Yy]$ ]]
-then
+if [ ! -f ~/storage ]; then
+  echo
+  echo -e "\e[0;33mTHIS IS OPTIONAL.\e[0m"
+  echo -e "\e[0;32mIf you want to link your device storage, please give the app permission to access your file.\e[0m"
+  echo -e "\e[0;32mYou can setup it anytime with executing: 'termux-setup-storage'.\e[0m"
+  echo
+  read -p "Link your device storage? (y/N): " -n 1 -r
+  if [[ $REPLY =~ ^[Yy]$ ]]; then
     echo
-    echo -e "\e[0;32mLinking...\e[0m"
+    echo "Linking..."
     termux-setup-storage
+    else
+      echo
+      echo "Skipped"
+    fi
+  fi
 fi
 
 echo
