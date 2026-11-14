@@ -62,6 +62,8 @@ in order for a full Linux desktop.
 
 ⚠️ Do not install Termux from Play Store!
 
+<br>
+
 Update package and install wget:
 
 ```
